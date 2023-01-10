@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts_pages",
+  "info": {
+    "singularName": "contacts-page",
+    "pluralName": "contacts-pages",
+    "displayName": "Контакты",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "phoneSelling": {
+      "type": "string",
+      "required": false
+    },
+    "phoneOffice": {
+      "type": "string",
+      "required": true
+    },
+    "adressOffice": {
+      "type": "string",
+      "required": true
+    },
+    "adressSelling": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

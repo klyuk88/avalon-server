@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "Параметры лодок",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "length": {
+      "type": "float"
+    },
+    "width": {
+      "type": "float"
+    },
+    "weigth": {
+      "type": "integer"
+    },
+    "passagers": {
+      "type": "integer"
+    },
+    "power": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "lengthFt": {
+      "type": "integer"
+    },
+    "boats": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::boat.boat",
+      "mappedBy": "types"
+    }
+  }
+}
